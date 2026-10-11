@@ -1,0 +1,1023 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071426">
+<meta name="description" content="AzDar Web Studio — Professional websites for modern businesses.">
+<title>AzDar Web Studio | Professional Web Design</title>
+<style>
+:root {
+  --bg:#071426;
+  --panel:#102541;
+  --blue:#5598ff;
+  --cyan:#69e5f2;
+  --white:#f7f9ff;
+  --muted:#afbed2;
+  --line:rgba(255,255,255,.13);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{
+  margin:0;background:var(--bg);color:var(--white);
+  font-family:Arial,Helvetica,sans-serif;line-height:1.7;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{
+  position:sticky;top:0;z-index:10;
+  background:rgba(7,20,38,.96);
+  border-bottom:1px solid var(--line);
+}
+nav{
+  min-height:75px;display:flex;align-items:center;
+  justify-content:space-between;gap:18px;
+}
+.logo{font-size:21px;font-weight:900;letter-spacing:-1px}
+.logo span{color:var(--cyan)}
+.navlinks{display:flex;gap:20px;align-items:center}
+.navlinks a{font-size:13px;color:var(--muted)}
+.navlinks a:hover{color:var(--cyan)}
+.btn{
+  display:inline-block;padding:12px 19px;border-radius:10px;
+  background:linear-gradient(120deg,var(--blue),var(--cyan));
+  color:#061426;font-size:13px;font-weight:800;border:0;cursor:pointer;
+}
+.btn-outline{
+  background:transparent;color:white;border:1px solid var(--line);
+}
+.hero{
+  padding:95px 0 80px;
+  background:radial-gradient(ellipse at 85% 10%,#17385c 0,transparent 45%);
+}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
+.eyebrow{color:var(--cyan);font-size:12px;font-weight:bold;letter-spacing:2px}
+h1{font-size:clamp(40px,6vw,68px);line-height:1.08;letter-spacing:-2px;margin:20px 0}
+.gradient{background:linear-gradient(90deg,#fff,var(--cyan));color:transparent;background-clip:text}
+.hero p{color:var(--muted);max-width:580px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}
+.preview{
+  padding:22px;border:1px solid var(--line);border-radius:22px;
+  background:linear-gradient(145deg,#132f50,#09182b);
+  box-shadow:0 25px 70px #0005;transform:rotate(1deg);
+}
+.preview-top{display:flex;gap:6px;border-bottom:1px solid var(--line);padding-bottom:15px}
+.preview-top i{width:8px;height:8px;border-radius:50%;background:var(--cyan)}
+.preview h2{font-size:28px;line-height:1.2}
+.fake-line{height:7px;background:#34516f;border-radius:10px;margin:12px 0;width:85%}
+.fake-line.short{width:55%}
+.preview-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:25px}
+.preview-cards div{height:75px;border:1px solid var(--line);background:#ffffff08;border-radius:9px}
+section{padding:75px 0}
+.section-head{text-align:center;max-width:680px;margin:0 auto 38px}
+.section-head h2{font-size:clamp(29px,4vw,43px);line-height:1.2;margin:10px 0}
+.section-head p{color:var(--muted)}
+.kicker{color:var(--cyan);font-size:11px;font-weight:bold;letter-spacing:2px}
+.alt{background:#ffffff05;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header>
+<nav class="container">
+<a class="logo" href="#home">AzDar <span>Web Studio</span></a>
+<div class="navlinks" id="navlinks">
+<a href="#services">Services</a>
+<a href="#work">Portfolio</a>
+<a href="#pricing">Pricing</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+<a class="btn" href="#contact">Start a Project ↗</a>
+</nav>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<div class="eyebrow">YOUR VISION. OUR DIGITAL CRAFT.</div>
+<h1>Websites that make your business <span class="gradient">stand out.</span></h1>
+<p>We create modern, mobile-friendly websites for businesses, entrepreneurs and personal brands. Build trust, showcase your services and give your ideas a professional online home.</p>
+<div class="actions">
+<a class="btn" href="#contact">Let's Build Your Website ↗</a>
+<a class="btn btn-outline" href="#services">Explore Services ↓</a>
+</div>
+<p>✓ Mobile-friendly &nbsp; ✓ Modern design &nbsp; ✓ Custom project quotes</p>
+</div>
+<div class="preview">
+<div class="preview-top"><i></i><i></i><i></i></div>
+<div class="kicker">AZDAR DIGITAL EXPERIENCE</div>
+<h2>Your business,<br><span class="gradient">beautifully online.</span></h2>
+<div class="fake-line"></div><div class="fake-line short"></div>
+<span class="btn">DISCOVER MORE ↗</span>
+<div class="preview-cards"><div></div><div></div><div></div></div>
+</div>
+</div>
+</section>
+
+<section class="alt" id="services">
+<div class="container">
+<div class="section-head">
+<div class="kicker">WHAT WE DO</div>
+<h2>Digital solutions for <span class="gradient">your growth.</span></h2>
+<p>Professional web design services to help your business build a stronger online presence.</p>
+</div>
+<div class="services-grid">
+<article class="service">
+<div class="service-icon">✦</div>
+<h3>Business Websites</h3>
+<p>Professional websites for shops, companies and local businesses.</p>
+<ul><li>Business introduction</li><li>Services and contact details</li><li>Mobile-friendly layout</li></ul>
+</article>
+<article class="service">
+<div class="service-icon">▣</div>
+<h3>Landing Pages</h3>
+<p>Focused pages for your products, campaigns and services.</p>
+<ul><li>Clear call to action</li><li>Modern visual design</li><li>Customer inquiry section</li></ul>
+</article>
+<article class="service">
+<div class="service-icon">⌘</div>
+<h3>Portfolio Websites</h3>
+<p>Show your skills, projects and personal brand professionally.</p>
+<ul><li>Personal profile</li><li>Project showcase</li><li>Social links</li></ul>
+</article>
+<article class="service">
+<div class="service-icon">◈</div>
+<h3>Website Redesign</h3>
+<p>Refresh an outdated website with a cleaner, more modern look.</p>
+<ul><li>Updated design</li><li>Better page structure</li><li>Responsive layout</li></ul>
+</article>
+<article class="service">
+<div class="service-icon">↗</div>
+<h3>Personal Branding</h3>
+<p>Create a professional online home for your name and work.</p>
+<ul><li>Personal introduction</li><li>Social media integration</li><li>Contact section</li></ul>
+</article>
+<article class="service">
+<div class="service-icon">⚙</div>
+<h3>Website Updates</h3>
+<p>Improve existing pages, content and website presentation.</p>
+<ul><li>Content changes</li><li>Section improvements</li><li>Design refinements</li></ul>
+</article>
+</div>
+</div>
+</section>
+
+<section id="work">
+<div class="container">
+<div class="section-head">
+<div class="kicker">OUR PORTFOLIO</div>
+<h2>Ideas turned into <span class="gradient">digital experiences.</span></h2>
+<p>Sample website concepts. These are demonstrations, not claims of completed client projects.</p>
+</div>
+<div class="services-grid">
+<article class="project">
+<div class="project-art business-art">
+<span>BUSINESS</span><strong>Your Company<br>Starts Here.</strong><div class="art-line"></div>
+</div>
+<div class="project-content">
+<h3>Business Website</h3>
+<p>A polished online presence for local businesses and companies.</p>
+<a href="#contact">Request a similar website ↗</a>
+</div>
+</article>
+<article class="project">
+<div class="project-art landing-art">
+<span>YOUR NEXT BIG IDEA</span><strong>Make Every<br>Click Count.</strong><div class="art-line"></div>
+</div>
+<div class="project-content">
+<h3>Landing Page</h3>
+<p>A focused page for a product, service or marketing campaign.</p>
+<a href="#contact">Request a similar website ↗</a>
+</div>
+</article>
+<article class="project">
+<div class="project-art portfolio-art">
+<span>PERSONAL BRAND</span><strong>Show The World<br>What You Do.</strong><div class="art-line"></div>
+</div>
+<div class="project-content">
+<h3>Personal Portfolio</h3>
+<p>A clean space to highlight skills, experience and projects.</p>
+<a href="#contact">Request a similar website ↗</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<style>
+.services-grid,
+.portfolio-grid,
+.pricing-grid,
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.service-card,
+.project-card,
+.price-card,
+.process-card {
+  background: #101d32;
+  border: 1px solid #263750;
+  border-radius: 18px;
+  padding: 25px;
+  transition: 0.25s ease;
+}
+
+.service-card:hover,
+.project-card:hover,
+.price-card:hover {
+  transform: translateY(-5px);
+  border-color: #45b8ff;
+}
+
+.service-icon {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.service-card h3,
+.project-card h3,
+.price-card h3,
+.process-card h3 {
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.service-card p,
+.project-card p,
+.price-card p,
+.process-card p {
+  color: #b8c5d8;
+  line-height: 1.7;
+}
+
+.project-preview {
+  min-height: 145px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #183e6a, #0d1729);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+
+.price {
+  font-size: 29px;
+  font-weight: 800;
+  color: #55c1ff;
+  margin: 18px 0;
+}
+
+.price-card ul {
+  padding-left: 20px;
+  color: #d5deeb;
+  line-height: 2;
+}
+
+.price-card .btn {
+  display: inline-block;
+  margin-top: 18px;
+}
+
+.section-tag {
+  display: inline-block;
+  color: #67c8ff;
+  background: #102d49;
+  padding: 7px 12px;
+  border-radius: 30px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.about-panel {
+  background: #101d32;
+  border: 1px solid #263750;
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.about-points {
+  display: grid;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.about-point {
+  background: #14243a;
+  border-radius: 10px;
+  padding: 13px;
+  color: #e5edf8;
+}
+
+@media (max-width: 800px) {
+  .services-grid,
+  .portfolio-grid,
+  .pricing-grid,
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<section id="process" class="section">
+  <div class="container">
+    <span class="section-tag">OUR SERVICES</span>
+    <h2>Digital Solutions for Your Business</h2>
+    <p class="section-intro">
+      Professional, mobile-friendly websites designed to help your business
+      build trust and connect with more customers.
+    </p>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>Business Website</h3>
+        <p>A professional website to introduce your business, services,
+        contact details and brand identity.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🛍️</div>
+        <h3>Online Store</h3>
+        <p>A product showcase with categories, product details and
+        customer enquiry options.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Mobile-Friendly Design</h3>
+        <p>A responsive layout designed to work smoothly on phones,
+        tablets and desktop screens.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🏢</div>
+        <h3>Portfolio Website</h3>
+        <p>Showcase your work, skills, services and business identity
+        in a clean professional layout.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">📣</div>
+        <h3>Landing Page</h3>
+        <p>A focused page for promoting a service, product, campaign
+        or customer enquiry.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Website Updates</h3>
+        <p>Improve existing website content, layout, mobile usability
+        and visual presentation.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="section alt">
+  <div class="container">
+    <span class="section-tag">PORTFOLIO</span>
+    <h2>Website Design Concepts</h2>
+    <p class="section-intro">
+      Example design concepts showing how different business websites
+      could look. These are sample concepts, not claimed client projects.
+    </p>
+
+    <div class="portfolio-grid">
+      <article class="project-card">
+        <div class="project-preview">🏢 Business</div>
+        <h3>Corporate Website</h3>
+        <p>A clean company profile with services, about information
+        and contact details.</p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-preview">🛒 E-Commerce</div>
+        <h3>Online Shop</h3>
+        <p>A modern product-focused design for displaying items
+        and receiving customer enquiries.</p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-preview">🚘 Auto Showroom</div>
+        <h3>Car Showroom</h3>
+        <p>A vehicle showcase concept with car details, pricing
+        and enquiry sections.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="pricing" class="section">
+  <div class="container">
+    <span class="section-tag">PACKAGES</span>
+    <h2>Simple Website Packages</h2>
+    <p class="section-intro">
+      Starting prices are estimates. Final pricing depends on the
+      website requirements, features and content.
+    </p>
+
+    <div class="pricing-grid">
+      <article class="price-card">
+        <h3>Starter</h3>
+        <p>For individuals and small businesses.</p>
+        <div class="price">PKR 5,000</div>
+        <ul>
+          <li>One-page website</li>
+          <li>Mobile-friendly layout</li>
+          <li>Services and contact section</li>
+          <li>Social media links</li>
+        </ul>
+        <button class="btn" onclick="selectPackage('Starter - PKR 5,000')">
+          Choose Starter
+        </button>
+      </article>
+
+      <article class="price-card">
+        <span class="section-tag">POPULAR</span>
+        <h3>Business</h3>
+        <p>For businesses needing more information pages.</p>
+        <div class="price">PKR 10,000</div>
+        <ul>
+          <li>Multi-section website</li>
+          <li>Responsive design</li>
+          <li>Portfolio or product showcase</li>
+          <li>Contact and social links</li>
+        </ul>
+        <button class="btn" onclick="selectPackage('Business - PKR 10,000')">
+          Choose Business
+        </button>
+      </article>
+
+      <article class="price-card">
+        <h3>Premium</h3>
+        <p>For businesses with custom requirements.</p>
+        <div class="price">PKR 20,000+</div>
+        <ul>
+          <li>Custom website design</li>
+          <li>Additional pages and sections</li>
+          <li>Advanced visual features</li>
+          <li>Project-specific quotation</li>
+        </ul>
+        <button class="btn" onclick="selectPackage('Premium - PKR 20,000+')">
+          Choose Premium
+        </button>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section alt">
+  <div class="container about-layout">
+    <div>
+      <span class="section-tag">ABOUT US</span>
+      <h2>Making Your Business Look Professional Online</h2>
+      <p>
+        AzDar Web Studio helps businesses establish a professional
+        online presence through modern website design and practical
+        digital solutions.
+      </p>
+      <p>
+        Our focus is on clear layouts, mobile-friendly experiences
+        and designs that make it easy for customers to understand
+        your business.
+      </p>
+    </div>
+
+    <div class="about-panel">
+      <h3>Why Choose AzDar Web Studio?</h3>
+      <div class="about-points">
+        <div class="about-point">✓ Clean, modern design</div>
+        <div class="about-point">✓ Mobile-friendly layouts</div>
+        <div class="about-point">✓ Clear service and pricing information</div>
+        <div class="about-point">✓ Direct customer enquiry options</div>
+        <div class="about-point">✓ Personal support throughout the project</div>
+      </div>
+      <p><strong>Created by Azmat Ali</strong></p>
+    </div>
+  </div>
+</section>
+<style>
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.contact-card,
+.contact-form {
+  background: #101d32;
+  border: 1px solid #263750;
+  border-radius: 18px;
+  padding: 26px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  padding: 15px 0;
+  border-bottom: 1px solid #263750;
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.contact-item p {
+  margin: 0;
+  color: #b8c5d8;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background: #183e6a;
+  border: 1px solid #315c87;
+  padding: 11px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.social-links a:hover {
+  background: #24568b;
+}
+
+.contact-form label {
+  display: block;
+  color: #e5edf8;
+  margin: 14px 0 7px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px;
+  color: #ffffff;
+  background: #0b1526;
+  border: 1px solid #34445c;
+  border-radius: 9px;
+  font: inherit;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #55c1ff;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form select option {
+  background: #0b1526;
+}
+
+.form-note {
+  color: #aebdd1;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-top: 12px;
+}
+
+.contact-form .btn {
+  width: 100%;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<section id="contact" class="section">
+  <div class="container">
+    <span class="section-tag">GET IN TOUCH</span>
+    <h2>Let's Build Your Website</h2>
+    <p class="section-intro">
+      Tell us about your business and the website you need.
+      Submit the form to prepare your enquiry message.
+    </p>
+
+    <div class="contact-layout">
+      <div class="contact-card">
+        <h3>Contact AzDar Web Studio</h3>
+        <p>
+          Have a project in mind? Connect through our social media
+          pages or prepare a project enquiry using the form.
+        </p>
+
+        <div class="contact-item">
+          <div>🌐</div>
+          <div>
+            <strong>Website Services</strong>
+            <p>Business websites, portfolios, landing pages and online stores.</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div>📍</div>
+          <div>
+            <strong>Serving Businesses</strong>
+            <p>Pakistan and online clients.</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div>✉️</div>
+          <div>
+            <strong>Project Enquiries</strong>
+            <p>Use the form to prepare your website requirements.</p>
+          </div>
+        </div>
+
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/profile.php?id=61594962434880"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Facebook Page ↗</a>
+
+          <a
+            href="https://www.tiktok.com/@azmataliwattoo4098?_r=1&_d=f0a8561ddammgi&sec_uid=MS4wLjABAAAAKqayo4hUq-XPAPmmy_1XsfMUdBTVo0PBdNjid-dfJjW_AOq"
+            target="_blank"
+            rel="noopener noreferrer"
+          >TikTok Profile ↗</a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="enquiryForm">
+        <h3>Website Enquiry Form</h3>
+
+        <label for="clientName">Your Name</label>
+        <input
+          type="text"
+          id="clientName"
+          name="clientName"
+          placeholder="Enter your name"
+          required
+        >
+
+        <label for="businessName">Business Name</label>
+        <input
+          type="text"
+          id="businessName"
+          name="businessName"
+          placeholder="Enter your business name"
+        >
+
+        <label for="clientEmail">Email Address</label>
+        <input
+          type="email"
+          id="clientEmail"
+          name="clientEmail"
+          placeholder="Enter your email (optional)"
+        >
+
+        <label for="websiteType">Website Type</label>
+        <select id="websiteType" name="websiteType" required>
+          <option value="">Select a website type</option>
+          <option>Business Website</option>
+          <option>Online Store</option>
+          <option>Portfolio Website</option>
+          <option>Landing Page</option>
+          <option>Car Showroom Website</option>
+          <option>Other</option>
+        </select>
+
+        <label for="selectedPackage">Preferred Package</label>
+        <select id="selectedPackage" name="selectedPackage">
+          <option value="">Not decided yet</option>
+          <option>Starter - PKR 5,000</option>
+          <option>Business - PKR 10,000</option>
+          <option>Premium - PKR 20,000+</option>
+        </select>
+
+        <label for="projectDetails">Project Details</label>
+        <textarea
+          id="projectDetails"
+          name="projectDetails"
+          placeholder="Describe the website you need..."
+          required
+        ></textarea>
+
+        <button class="btn" type="submit">
+          Prepare Enquiry Message
+        </button>
+
+        <p class="form-note">
+          Note: This form prepares a message for you to copy or share.
+          It does not automatically send or store customer information.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container footer-content">
+    <div>
+      <h3>AzDar <span>Web Studio</span></h3>
+      <p>Professional websites for growing businesses.</p>
+      <p>Created by Azmat Ali</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#pricing">Packages</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <p class="copyright">
+      © <span id="currentYear"></span> AzDar Web Studio. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<style>
+.site-footer {
+  background: #07101e;
+  border-top: 1px solid #263750;
+  padding: 38px 0 22px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.site-footer h3 {
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.site-footer h3 span {
+  color: #55c1ff;
+}
+
+.site-footer p {
+  color: #aebdd1;
+  line-height: 1.7;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #dbe7f6;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #55c1ff;
+}
+
+.copyright {
+  width: 100%;
+  border-top: 1px solid #263750;
+  padding-top: 18px;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.btn {
+  border: 1px solid #55c1ff;
+  background: #1685d1;
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: #0868ad;
+  transform: translateY(-2px);
+}
+
+.section-intro {
+  max-width: 720px;
+  color: #b8c5d8;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    gap: 12px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  // Automatic copyright year
+  var year = document.getElementById("currentYear");
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
+
+  // Select a package and move to the enquiry form
+  window.selectPackage = function (packageName) {
+    var packageSelect = document.getElementById("selectedPackage");
+
+    if (packageSelect) {
+      var matched = false;
+
+      for (var i = 0; i < packageSelect.options.length; i++) {
+        if (packageSelect.options[i].text === packageName) {
+          packageSelect.selectedIndex = i;
+          matched = true;
+          break;
+        }
+      }
+
+      if (!matched) {
+        packageSelect.value = "";
+      }
+    }
+
+    var contact = document.getElementById("contact");
+    if (contact) {
+      contact.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  // Prepare an enquiry message for the customer to copy or share
+  var enquiryForm = document.getElementById("enquiryForm");
+
+  if (enquiryForm) {
+    enquiryForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      var name = document.getElementById("clientName").value.trim();
+      var business = document.getElementById("businessName").value.trim();
+      var email = document.getElementById("clientEmail").value.trim();
+      var type = document.getElementById("websiteType").value;
+      var packageName = document.getElementById("selectedPackage").value;
+      var details = document.getElementById("projectDetails").value.trim();
+
+      var message =
+        "Website Enquiry - AzDar Web Studio\n\n" +
+        "Name: " + name + "\n" +
+        "Business: " + (business || "Not provided") + "\n" +
+        "Email: " + (email || "Not provided") + "\n" +
+        "Website Type: " + type + "\n" +
+        "Preferred Package: " + (packageName || "Not decided") + "\n" +
+        "Project Details: " + details;
+
+      var oldResult = document.getElementById("enquiryResult");
+      if (oldResult) {
+        oldResult.remove();
+      }
+
+      var result = document.createElement("div");
+      result.id = "enquiryResult";
+      result.style.marginTop = "18px";
+      result.style.padding = "15px";
+      result.style.borderRadius = "10px";
+      result.style.background = "#14243a";
+      result.style.border = "1px solid #315c87";
+
+      var resultText = document.createElement("p");
+      resultText.style.whiteSpace = "pre-wrap";
+      resultText.style.color = "#e5edf8";
+      resultText.textContent = message;
+
+      var copyButton = document.createElement("button");
+      copyButton.type = "button";
+      copyButton.className = "btn";
+      copyButton.textContent = "Copy Enquiry Message";
+
+      copyButton.addEventListener("click", async function () {
+        try {
+          await navigator.clipboard.writeText(message);
+          copyButton.textContent = "Copied Successfully!";
+        } catch (error) {
+          var textArea = document.createElement("textarea");
+          textArea.value = message;
+          textArea.style.width = "100%";
+          textArea.style.minHeight = "160px";
+          result.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+
+          try {
+            var copied = document.execCommand("copy");
+            copyButton.textContent = copied
+              ? "Copied Successfully!"
+              : "Select the message and copy it";
+          } catch (copyError) {
+            copyButton.textContent = "Select the message and copy it";
+          }
+        }
+      });
+
+      var shareButton = document.createElement("button");
+      shareButton.type = "button";
+      shareButton.className = "btn";
+      shareButton.style.marginLeft = "8px";
+      shareButton.style.marginTop = "8px";
+      shareButton.textContent = "Share Message";
+
+      shareButton.addEventListener("click", async function () {
+        if (navigator.share) {
+          try {
+            await navigator.share({
+              title: "Website Enquiry",
+              text: message
+            });
+          } catch (error) {
+            // The customer may cancel the share menu.
+          }
+        } else {
+          window.prompt("Copy this enquiry message:", message);
+        }
+      });
+
+      result.appendChild(resultText);
+      result.appendChild(copyButton);
+      result.appendChild(shareButton);
+      enquiryForm.appendChild(result);
+
+      result.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    });
+  }
+
+  // Smooth scrolling for internal navigation links
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      var targetId = link.getAttribute("href");
+      var target = document.querySelector(targetId);
+
+      if (target) {
+        event.preventDefault();
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+});
+</script>
+
+</main>
+</body>
+</html>
